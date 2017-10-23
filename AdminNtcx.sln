@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Web
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminNtcx.Domain", "AdminNtcx.Domain\AdminNtcx.Domain.csproj", "{C7C070DF-483F-4670-B9B3-E6FF0446B1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminNtcx.WebUI", "AdminNtcx.WebUI\AdminNtcx.WebUI.csproj", "{DC2E6969-380B-4090-B683-62186283F1B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7C070DF-483F-4670-B9B3-E6FF0446B1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C070DF-483F-4670-B9B3-E6FF0446B1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C070DF-483F-4670-B9B3-E6FF0446B1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C070DF-483F-4670-B9B3-E6FF0446B1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2E6969-380B-4090-B683-62186283F1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2E6969-380B-4090-B683-62186283F1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2E6969-380B-4090-B683-62186283F1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2E6969-380B-4090-B683-62186283F1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

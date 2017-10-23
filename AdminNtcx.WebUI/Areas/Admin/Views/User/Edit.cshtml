@@ -1,0 +1,54 @@
+﻿@model AdminNtcx.Domain.Entities.UserInfo
+@{
+    ViewBag.Title = "用户管理";
+    ViewBag.SubTitle = "编辑用户";
+}
+
+@section Menu {
+
+}
+
+<div class="box box-primary">
+    <div style="width:400px">
+        <div class="box-header with-border">
+        </div>
+        @using (Html.BeginForm("Edit", "User"))
+        {
+            <div class="box-body">
+                <div class="form-group has-error">
+                    <label>用户名</label>
+                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+                    @Html.ValidationMessage("UserName")
+                </div>
+                <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" class="form-control" id="RealName" name="RealName" placeholder="输入姓名..." value="@Model.RealName">
+                    @Html.ValidationMessage("RealName")
+                </div>
+                <div class="form-group">
+                    <label>联系电话</label>
+                </div>
+
+                <div>
+                    <input type="text" id="UserID" name="UserID" value="@Model.UserID" hidden />
+                    <input type="text" id="RegistDate" name="RegistDate" value="@Model.RegistDate" hidden />
+                    <input type="text" id="Password" name="password" value="@Model.Password" hidden>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="control-label" for="inputWarning">
+                        <i class="fa fa-bell-o"></i> Input with
+                        warning
+                    </label>
+                    <input type="text" class="form-control" id="inputWarning" placeholder="Enter ...">
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-info">提交</button>
+                    @Html.ActionLink("取消并返回列表", "Index", null, new { @class = "btn btn-default pull-right" })
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+       
+
